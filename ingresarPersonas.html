@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ingresarPersonas</title>
+</head>
+<body>
+	<form action="ingresarPersonas.php" method="post">
+<center>
+	<table border=1 width="40%" >
+		<tr>
+			<td colspan="5"><center><h1 style="color: red ;" >Ingresar</h1></center></td>
+		</tr>
+
+		<tr>
+			<td width=50%><center>Numero_pedido</center>
+			<td><input type="text" name="Numero_Pedido" required><br></td>
+		</tr>
+
+		<tr>
+			<td width=50%><center>Nombre</center>
+			<td><input type="text" name="Nombres"pattern="[A-Za-z0-9_-]{1,15}" required><br></td>
+		</tr>
+
+		<tr>
+			<td width=50%><center>Apellido</center>
+			<td><input type="text" name="Apellidos" pattern="[A-Za-z0-9_-]{1,15}"required><br></td>
+		</tr>
+
+		<tr>
+			<td width=50%><center>Documento_Identidad</center>
+			<td><input type="text" name="Documento_Identidad" pattern="[A-Za-z0-9_-]{1,15}"required><br></td>
+		</tr>
+
+		<tr>
+			<td width=50%><center>Num_Documento</center>
+			<td><input type="number" name="Num_Documento"pattern="[A-Za-z0-9_-]{1,15}"required><br></td>
+		</tr>
+
+		<tr>
+			<td width=50%><center>Distancia</center>
+			<td><input type="text" name="Distancia"pattern="[A-Za-z0-9_-]{1,15}"required><br></td>
+		</tr>
+
+		<tr>
+			<td width=50%><center>Talla_Camiseta</center>
+				<td><input type="text" name="Talla_Camiseta"pattern="[A-Za-z0-9_-]{1,15}"required><br></td>
+		</tr>
+		<tr>
+
+			<td width=50%><center>Dorsal_Entregado</center>
+			<td><input type="text" name="Dorsal_Entregado"pattern="[A-Za-z0-9_-]{1,15}"required><br></td>
+		</tr>
+
+
+		<tr>
+			<td width=50%><center>Kit_Entregado</center>
+			<td>
+				<select id="Kit_Entregado" name="Kit_Entregado">
+    			<option value="Titular">kit resibido titular  </option>
+    			<option value="tercero">kit resibido tercero</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<center> <input type="submit" value="Listo" name="btnIngresar"></center> 
+				<th><center> <a href="busquedaCorredor.php"> <button type="button" class="btn btn-info">Regresar</button> </a></center> </th>
+			</td>
+		</tr>
+		
+
+
+
+
+
+	</table>
+	</form>
+
+</body>
+</html>
